@@ -9,26 +9,25 @@ class Program
 {
     static void Main(string[] args)
     {
+        List<int> numbers = new List<int>();
         Console.WriteLine("Enter a list of number, type 0 when finished.");
-        // List<int> numbers = new List<int>();
-        // Console.WriteLine("Enter a list of number, type 0 when finished.");
 
-        // int numInput = 1;
-        // int sum = 0;
+        int numInput = 1;
+        int sum = 0;
 
-        // while (numInput != 0)
-        // {
-        //     Console.Write("Enter number: ");
-        //     string ansInput = Console.ReadLine();
-        //     numInput = int.Parse(ansInput);
-        //     numbers.Add(numInput);
-        // }
+        while (numInput != 0)
+        {
+            Console.Write("Enter number: ");
+            string ansInput = Console.ReadLine();
+            numInput = int.Parse(ansInput);
+            numbers.Add(numInput);
+        }
       
-        // foreach (int num in numbers)
-        // {
-        //     sum += num;
-        // }
+        foreach (int num in numbers)
+        {
+            sum += num;
+        }
 
-        // Console.Write($"Total is: {sum}");
+        Console.Write($"Total is: {sum}");
     }
 }
