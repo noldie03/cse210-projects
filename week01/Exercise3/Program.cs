@@ -4,14 +4,17 @@ class Program
 {
     static void Main(string[] args)
     {   
-        int guess;
-        int num;
-        do
-        {
-            Console.Write("What is the magic number? ");
-            string ansNum = Console.ReadLine();
-            num = int.Parse(ansNum);
+        // Console.Write("What is the magic number? ");
+        //     string ansNum = Console.ReadLine();
+        Random randomGenerator = new Random ();
+        int num = randomGenerator.Next(1, 101);
+        //int num = int.Parse(ansNum);
 
+        int guess = -1;
+
+        while (guess != num)
+        {
+            
             Console.Write("What is your guess? ");
             string ansGuess = Console.ReadLine();
             guess = int.Parse(ansGuess);
@@ -29,7 +32,7 @@ class Program
                 Console.WriteLine("Correct");
             }
         
-        } while (guess != num);
+        } 
 
 
     }
