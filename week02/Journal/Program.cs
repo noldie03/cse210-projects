@@ -1,7 +1,8 @@
 using System;
 
 class Program
-{
+{   //For the stretch challenge, I included trappings to check if the file exists before loading it.
+    // I also added a check to see if there are any entries before displaying them.
     static void Main(string[] args)
     {
         string optionInput = "";
