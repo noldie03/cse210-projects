@@ -16,11 +16,6 @@ public class Word
         _isHidden = true;
     }
 
-    public void Show()
-    {
-        _isHidden = false;
-    }
-
     public bool IsHidden()
     {
         return _isHidden;
@@ -28,6 +23,7 @@ public class Word
 
     public string GetDisplayText()
     {
-        return _isHidden ? "_____" : _text;
+        // If hidden, return underscores matching the word's length
+        return _isHidden ? new string('_', _text.Length) : _text;
     }
 }
