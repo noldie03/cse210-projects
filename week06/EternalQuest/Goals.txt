@@ -1,0 +1,4 @@
+0
+SimpleGoal|read script|gain peace|50|False
+EternalGoal|pray daily|feel safe|30
+ChecklistGoal|church|sacrament|100|3|0|500|False
